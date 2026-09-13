@@ -21,7 +21,7 @@
 
 .header {
   height: 96px;
-  background-color: rgba(165, 27, 27, 0.2);
+  /* background-color: rgba(165, 27, 27, 0.2); */
 }
 
 .p {
@@ -198,11 +198,93 @@ h4 {
   top: 10%;
   left: 85%;
 }
+
 .background__decor .star_small {
   position: absolute;
   top: 60%;
   left: 45%;
 }
 
-.background__banner img {
+.brand__slider{
+  margin: auto;
+  width: 1440px;
+  height: 122px;
+  background-color: rgba(0, 0, 0, 1);
 }
+
+.brand__logo{
+  list-style: none;
+  display: flex;
+  padding: 43px 0 0 106px;
+  gap: 106px;
+
+ 
+}
+.newArrivals h1{
+  text-align: center;
+  padding: 72px 0  52px 0;
+  font-size: 48px;
+
+}
+
+.newArrivals__item{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.item__info {
+  list-style: none;
+  padding: 16px 0 0 0;
+
+}
+
+.item__info li{
+  margin-bottom: 8px;
+
+}
+
+.item_rating{
+  display: flex;
+  gap: 13px;
+}
+
+
+
+.item__price{
+  text-align: center;
+  display: flex;
+  width: 189px;
+  height: 32px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.item__price p{
+  margin-right: 9px;
+}
+
+.bottom__viewall{
+  margin: auto;
+  width: 218px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  align-content: center;
+  border-radius: 62px;
+  margin-top:  36px;;
+}
+
+.nggang{
+  padding-top: 64px;
+  width: 1240px;
+  height: 1px;
+  border: 2px solid black;
+  
+
+  margin: auto;
+}
+
