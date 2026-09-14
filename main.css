@@ -21,7 +21,6 @@
 
 .header {
   height: 96px;
-  /* background-color: rgba(165, 27, 27, 0.2); */
 }
 
 .p {
@@ -43,7 +42,6 @@
   margin: auto;
   padding: 24px 0;
   column-gap: 40px;
-  /* ***** */
 }
 
 h4 {
@@ -69,23 +67,22 @@ h4 {
 
 .search-container {
   display: flex;
-  width: 577px;
-  height: 48px;
+  position: relative;
+  
 }
 
 .search-container svg {
-  position: relative;
-  top: 25%;
-  /* top: 74px;
-    left: 667px; */
-  /* padding: 0px; */
-  z-index: 10;
+  position: absolute;
+  top: 50%;
+  padding-left: 16px;
+  transform: translateY(-50%);
+
 }
 
 .search-container input[type="text"] {
+  background-color: rgba(240, 240, 240, 1);
   width: 577px;
   height: 48px;
-  position: absolute;
 }
 
 .icons-nav {
@@ -111,11 +108,7 @@ h4 {
 }
 
 .banner__heading {
-  /* position: absolute; */
   width: 763px;
-  /* height: 173px; */
-  /* top: 237px;
-  left: 100px; */
   list-style: none;
   max-width: 577px;
   display: flex;
@@ -133,9 +126,7 @@ h4 {
 
 .banner__heading p {
   width: 545px;
-  /* height: 33px; */
   top: 442px;
-  /* left: 100px; */
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
@@ -167,7 +158,6 @@ h4 {
 .stats {
   padding-top: 16px;
   width: 596px;
-  /* height: 74px; */
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -210,6 +200,7 @@ h4 {
   width: 1440px;
   height: 122px;
   background-color: rgba(0, 0, 0, 1);
+  margin-bottom: 72px;
 }
 
 .brand__logo{
@@ -220,9 +211,9 @@ h4 {
 
  
 }
-.newArrivals h1{
+.shop h1{
   text-align: center;
-  padding: 72px 0  52px 0;
+  padding: 0 0  52px 0;
   font-size: 48px;
 
 }
@@ -238,11 +229,10 @@ h4 {
 .item__info {
   list-style: none;
   padding: 16px 0 0 0;
-
-}
-
-.item__info li{
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  
 
 }
 
@@ -256,35 +246,86 @@ h4 {
 .item__price{
   text-align: center;
   display: flex;
-  width: 189px;
-  height: 32px;
+  gap: 10px;
   font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.1); 
+  
 }
 
 .item__price p{
-  margin-right: 9px;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 2px 0 2px 0;
 }
 
 .bottom__viewall{
   margin: auto;
-  width: 218px;
-  height: 52px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
   text-align: center;
   align-content: center;
+  width: 218px;
+  height: 52px;
+  border: 1px solid black;
   border-radius: 62px;
-  margin-top:  36px;;
+  margin-top:  36px;
 }
 
-.nggang{
-  padding-top: 64px;
+.divider{
+  margin: 64px auto  ;
   width: 1240px;
-  height: 1px;
-  border: 2px solid black;
-  
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
-  margin: auto;
 }
 
+.item__price .discountbox{
+  padding: 6px  13px;
+  
+  color: rgba(255, 51, 51, 1);
+  background-color: rgba(255, 51, 51, 0.1);
+  font-size: 12px;
+  border-radius: 62px;
+
+}
+
+.item__price .discount{
+color: rgba(0, 0, 0, 0.4);
+font-weight: 700;
+letter-spacing: 0%;
+text-decoration: line-through;
+
+}
+
+.dressStyle__container{
+  height: 866px;
+  width: 1239px;
+  margin: 80px auto;
+  border-radius: 40px;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.dressStyle__container h1{
+  font-size: 48px;
+  text-align: center;
+padding: 70px 0 64px;
+
+}
+.dress-style__item{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin:0 64px;
+
+}
+
+.dress-style__item li{
+  position: relative;
+
+}
+
+.dress-style__item p{
+  position: absolute;
+  font-size: 36px;
+  top: 36px;
+  left: 36px;
+}
